@@ -5,5 +5,5 @@ password: test2016
 
 Risk Market account:
 
-login: riskmarket.testoviy2016@yandex.ru
-password: l0dcfJMB
+login: feodan@yandex.ru
+password: roBbfEyB

@@ -4,10 +4,10 @@ Feature: smoke test #1, go through the service to Yandex-pay-page https://habrah
 
     #actions at first page
     Given open riskmarket.ru
-    When press button with text "Вход в кабинет"
-    And type to input with name "userName" text: "riskmarket.testoviy2016@yandex.ru"
-    And type to input with name "password" text: "l0dcfJMB"
-    And press element with value "Войти"
+    When press button with text "Войти"
+    And type to input with name "userName" text: "feodan@yandex.ru"
+    And type to input with name "password" text: "roBbfEyB"
+    And press button with text "Войти"
     And wait until login frame disappears
     And select countries: Шенген, Финляндия, Китай
     And specify dates of journey, any available dates
@@ -23,7 +23,7 @@ Feature: smoke test #1, go through the service to Yandex-pay-page https://habrah
     #actions at third page
     When type to input with name "lastName" text: "TESTOVIY"
     And type to input with name "firstName" text: "TEST"
-    And press element with text "Принимаю"
-    And press element with value "Оформить" and it should be enabled
+    And check "Принимаю"
+    And press button with value "Оформить" and it should be enabled
     And press button with text "Оплатить"
-    Then verify that page with url "https://money.yandex.ru/cashdesk" is opened
+    Then verify that page with url "https://money.yandex.ru/eshop.xml" is opened
